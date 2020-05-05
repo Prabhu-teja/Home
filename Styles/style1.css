@@ -1,0 +1,29 @@
+textarea {
+    min-height: 5em;
+    max-height: 178px;
+    width: 80%;
+    resize: none;
+}
+#sm{
+    height: 50px;
+    width:200px;
+    margin-bottom: 45px;
+}
+*:focus{
+    outline: none;
+}
+.sender{
+    background-color: blue;
+    color:white;
+    max-width: 50%;
+    padding:5px 10px 10px 15px;
+}
+.receiver{
+    background-color: white;
+    color: black;
+    max-width: 50%;
+    padding:5px 10px 10px 15px;
+}
+.date{
+    color: red;
+}

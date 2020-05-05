@@ -1,0 +1,8 @@
+IP         :  127.0.0.1
+NAME       :  techguy
+EMAIL-ID   :  deva52595259@gmail.com
+MESSAGE    :  It's OK!
+
+
+
+
