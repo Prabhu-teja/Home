@@ -63,7 +63,7 @@
     </nav>
     <div class="container">
         <div class="jumbotron">
-            <form method="POST" autocomplete="off">
+            <!--form method="POST" autocomplete="off">
                 <div class="md-form">
                     <h class="display-3">
                         <marquee behaviour="scroll" >
@@ -88,38 +88,10 @@
                     <br><br>
                     <input class="btn btn-primary btn-lg" type="submit" value="Submit">
                 </div>
-            </form>
+            </form-->
+            Sorry, Currently this Website is not supporting PHP Files. You can get Help by contactin the Server Admin from Contact Us Page
+            <a href="contact.html" alt="Contact Us">
         </div>
     </div>
 </body>
 </html>
-<?php
-if(isset($_POST['textme']))
-{
-    if($_POST['textme']!=NULL and $_POST['nm']!=NULL)
-    {
-        $data=$_POST['textme'];
-        $fp=fopen('data.txt','a');
-        if(!empty($_SERVER['HTTP_CLIENT_IP']))
-        {
-            $ip=$_SERVER['HTTP_CLIENT_IP'];
-        }
-        else if(!empty($_SERVER['HTTP_X_FORWARDED_FOR']))
-        {
-            $ip=$_SERVER['HTTP_X_FORWARDED_FOR'];
-        }
-        else
-        {
-            $ip=$_SERVER['REMOTE_ADDR'];
-        }
-        fwrite($fp,"IP         :  ".$ip."\nNAME       :  ".$_POST['nm']."\nEMAIL-ID   :  ".$_POST['em']."\nMESSAGE    :  ".$data."\n");
-        fwrite($fp,"\n\n\n\n");
-        fclose(fp);
-        echo "<br><p style='color: green'>✔✔Message Sent</p>";
-    }
-    else
-    {
-        echo "<script>alert('Enter valid value')</script>";
-    }
-}
-?>
