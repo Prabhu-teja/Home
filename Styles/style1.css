@@ -14,7 +14,7 @@
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-    background: url(Images/loadingHp.gif) center no-repeat #fff;
+    background: url(../Images/loadingHp.gif) center no-repeat #fff;
 }
 textarea {
     min-height: 5em;
